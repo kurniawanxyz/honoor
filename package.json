@@ -1,6 +1,6 @@
 {
   "name": "honoor",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "dist/index.js",
   "bin": {
     "honoor": "dist/bin/cli.js"
@@ -11,7 +11,7 @@
   },
   "keywords": [],
   "author": "Adi Kurniawan",
-  "license": "ISC",
+  "license": "GPL-3.0-only",
   "description": "package yang terinspirasi oleh artisan",
   "devDependencies": {
     "@types/fs-extra": "^11.0.4",
