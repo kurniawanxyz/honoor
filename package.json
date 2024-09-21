@@ -1,5 +1,5 @@
 {
-  "name": "hono-generator",
+  "name": "honoor",
   "version": "1.0.0",
   "main": "dist/index.js",
   "bin": {
