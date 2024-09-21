@@ -1,6 +1,6 @@
 {
   "name": "honoor",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "dist/index.js",
   "bin": {
     "honoor": "dist/bin/cli.js"
@@ -10,9 +10,9 @@
     "prepare": "npm run build"
   },
   "keywords": [],
-  "author": "",
+  "author": "Adi Kurniawan",
   "license": "ISC",
-  "description": "",
+  "description": "package yang terinspirasi oleh artisan",
   "devDependencies": {
     "@types/fs-extra": "^11.0.4",
     "@types/node": "^22.5.5",

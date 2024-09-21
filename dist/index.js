@@ -29,7 +29,7 @@ const fs = __importStar(require("fs-extra"));
 const path = __importStar(require("path"));
 const baseDir = process.cwd(); // Mengambil direktori kerja saat ini
 function initializeProjectStructure() {
-    const directories = ['domains', 'helpers', 'usecase', 'handler', 'lib', 'repositories']; // Folder yang akan dibuat
+    const directories = ['domains', 'helpers', 'usecases', 'handlers', 'libs', 'repositories']; // Folder yang akan dibuat
     directories.forEach(dir => {
         const dirPath = path.join(`${baseDir}/src/`, dir);
         if (!fs.existsSync(dirPath)) {
