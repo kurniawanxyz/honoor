@@ -14,4 +14,22 @@ program
     .action(() => {
     (0, index_1.initializeProjectStructure)(); // Fungsi untuk menginisialisasi struktur folder
 });
+program
+    .command('create <name>')
+    .description('Create a new file')
+    .option('-s, --service', 'Create a service file')
+    .option('-rsc, --resources', 'Create a service,handler, domain, and repository file')
+    .option('-h, --handler', 'Create a handler file')
+    .option('-d, --domain', 'Create a domain file')
+    .option('-hl, --helpers', 'Create a helpers file')
+    .option('-r, --repository', 'Create a repository file')
+    .option('-l, --lib', 'Create a lib file')
+    .action(async (name, options) => {
+    const types = Object.keys(options).filter(key => options[key]);
+    if (types.length === 0) {
+        console.error('Please specify a type using -s, -h, -d, -hl, -r, or -l.');
+        process.exit(1);
+    }
+    await (0, index_1.createFile)(types[0], name);
+});
 program.parse(process.argv);
