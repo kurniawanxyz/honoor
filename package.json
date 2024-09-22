@@ -1,6 +1,6 @@
 {
   "name": "honoor",
-  "version": "1.0.3",
+  "version": "1.2.3",
   "main": "dist/index.js",
   "bin": {
     "honoor": "dist/bin/cli.js"
@@ -9,7 +9,7 @@
     "build": "tsc",
     "prepare": "npm run build"
   },
-  "keywords": [],
+"keywords": [],
   "author": "Adi Kurniawan",
   "license": "GPL-3.0-only",
   "description": "package yang terinspirasi oleh artisan",
