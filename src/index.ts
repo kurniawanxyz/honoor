@@ -3,7 +3,7 @@ import * as path from 'path';
 
 const baseDir = process.cwd(); // Mengambil direktori kerja saat ini
 export function initializeProjectStructure() {
-  const directories = ['domains', 'helpers', 'usecases', 'handlers', 'libs','repositories']; // Folder yang akan dibuat
+  const directories = ['domains', 'helpers', 'services', 'handlers', 'libs','repositories']; // Folder yang akan dibuat
 
   directories.forEach(dir => {
     const dirPath = path.join(`${baseDir}/src/`, dir);
